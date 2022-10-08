@@ -362,47 +362,6 @@ a:hover {
     z-index: 2;
 }
 
-@media (min-width: 768px) {
-    .site-navigation {
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translate(0, -50%);
-        -webkit-transform: translateY(-50%);
-    }
-    .nav > li .dropdown-menu a,
-    .nav > li .dropdown-menu a:hover {
-        color: #484848;
-    }
-    .nav-invert .site-navigation {
-        left: 0;
-        right: 0;
-    }
-    .nav-center {
-        text-align: center;
-    }
-    .nav-center .navbar-header {
-        width: 100%;
-    }
-    .nav-center .navbar-header,
-    .nav-center .navbar-brand,
-    .nav-center .nav > li {
-        float: none;
-        display: inline-block;
-    }
-    .nav-center .site-navigation {
-        position: relative;
-        width: 100%;
-        right: 0;
-        margin-right: 0px;
-        margin-top: 20px;
-    }
-    .nav-center.mini-nav .navbar-toggle {
-        float: none;
-        margin: 10px auto 0;
-    }
-}
-
 .nav > li > .dropdown a {
     background: none;
     display: block;
@@ -825,68 +784,47 @@ h4 {
     background-image: url("img/image-de-presentation.bmp");
 }
 
-@media (max-width: 1024px) {
+/* MAJ */
+
+.text-agence {
+    line-height: 22px;
+}
+
+.text-agence-1 {
+    font-size: 22px;
+    padding: 0 200px;
+    margin-bottom: 20px;
+}
+
+.text-agence-2 {
+    font-size: 19px;
+    padding: 0 70px;
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.text-agence-3 {
+    font-size: 20px;
+    padding: 0 50px;
+}
+
+/* Media queries */
+
+@media (max-width: 400px) {
     .bloc {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .bloc.full-width-bloc,
-    .bloc-tile-2.full-width-bloc .container,
-    .bloc-tile-3.full-width-bloc .container,
-    .bloc-tile-4.full-width-bloc .container {
         padding-left: 0;
         padding-right: 0;
     }
 }
 
-@media (max-width: 992px) and (min-width: 768px) {
-    .navbar .nav {
-        max-width: 80%
-    }
-    .nav-center.navbar .nav {
-        max-width: 100%
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    .b-parallax {
-        background-attachment: scroll;
-    }
-}
-
-@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
-    .b-parallax {
-        background-attachment: scroll;
-    }
-}
-
-@media (max-width: 991px) {
-    .container {
-        width: 100%;
-    }
-    .b-parallax {
-        background-attachment: scroll;
-    }
-    .page-container,
-    #hero-bloc {
-        overflow-x: hidden;
-        position: relative;
-    }
-    .bloc {
-        padding: 0 20px;
-    }
-    .bloc-group,
-    .bloc-group .bloc {
-        display: block;
-        width: 100%;
-    }
-    .bloc-fill-screen .fill-bloc-top-edge,
-    .bloc-fill-screen .fill-bloc-bottom-edge {
-        padding: 0 20px;
-    }
-}
-
 @media (max-width: 767px) {
+    .text-agence, .text-agence-1, .text-agence-2, .text-agence-3 {
+        padding: 0;
+    }
+}
+
+@media (min-width: 767px) {
     .page-container {
         overflow-x: hidden;
         position: relative;
@@ -1025,40 +963,110 @@ h4 {
     }
 }
 
-@media (max-width: 400px) {
-    .bloc {
-        padding-left: 0;
-        padding-right: 0;
-    }
-}
-
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
     }
 }
 
-/* MAJ */
-
-.text-agence {
-    line-height: 22px;
+@media (min-width: 768px) {
+    .site-navigation {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translate(0, -50%);
+        -webkit-transform: translateY(-50%);
+    }
+    .nav > li .dropdown-menu a,
+    .nav > li .dropdown-menu a:hover {
+        color: #484848;
+    }
+    .nav-invert .site-navigation {
+        left: 0;
+        right: 0;
+    }
+    .nav-center {
+        text-align: center;
+    }
+    .nav-center .navbar-header {
+        width: 100%;
+    }
+    .nav-center .navbar-header,
+    .nav-center .navbar-brand,
+    .nav-center .nav > li {
+        float: none;
+        display: inline-block;
+    }
+    .nav-center .site-navigation {
+        position: relative;
+        width: 100%;
+        right: 0;
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+    .nav-center.mini-nav .navbar-toggle {
+        float: none;
+        margin: 10px auto 0;
+    }
 }
 
-.text-agence-1 {
-    font-size: 22px;
-    padding: 0 200px;
-    margin-bottom: 20px;
+@media (min-width: 768px) and (max-width: 992px) {
+    .navbar .nav {
+        max-width: 80%
+    }
+    .nav-center.navbar .nav {
+        max-width: 100%
+    }
 }
 
-.text-agence-2 {
-    font-size: 19px;
-    padding: 0 70px;
-    font-weight: 500;
-    font-style: italic;
-    margin-bottom: 0;
+@media (max-width: 991px) {
+    .container {
+        width: 100%;
+    }
+    .b-parallax {
+        background-attachment: scroll;
+    }
+    .page-container,
+    #hero-bloc {
+        overflow-x: hidden;
+        position: relative;
+    }
+    .bloc {
+        padding: 0 20px;
+    }
+    .bloc-group,
+    .bloc-group .bloc {
+        display: block;
+        width: 100%;
+    }
+    .bloc-fill-screen .fill-bloc-top-edge,
+    .bloc-fill-screen .fill-bloc-bottom-edge {
+        padding: 0 20px;
+    }
 }
 
-.text-agence-3 {
-    font-size: 20px;
-    padding: 0 50px;
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .b-parallax {
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width: 1024px) {
+    .bloc {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .bloc.full-width-bloc,
+    .bloc-tile-2.full-width-bloc .container,
+    .bloc-tile-3.full-width-bloc .container,
+    .bloc-tile-4.full-width-bloc .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .b-parallax {
+        background-attachment: scroll;
+    }
 }
