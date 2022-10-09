@@ -781,7 +781,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.png");
 }
 
 /* MAJ */
@@ -821,6 +821,9 @@ h4 {
 @media (max-width: 767px) {
     .text-agence, .text-agence-1, .text-agence-2, .text-agence-3 {
         padding: 0;
+    }
+    .bloc-mob-center-text {
+        text-align: center;
     }
 }
 
@@ -960,12 +963,6 @@ h4 {
     .blocsapp-device-iphone5 img {
         width: 180px;
         height: 320px;
-    }
-}
-
-@media (max-width: 767px) {
-    .bloc-mob-center-text {
-        text-align: center;
     }
 }
 
