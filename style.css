@@ -100,7 +100,7 @@ a:hover {
 }
 
 .d-bloc {
-    color: white;
+    color: black;
 }
 
 .d-bloc button:hover {
@@ -133,7 +133,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: black;
 }
 
 .d-bloc .a-btn:hover,
@@ -695,7 +695,7 @@ h4 {
 }
 
 .white {
-    color: white;
+    color: black;
 }
 
 .portfolio-thumb {
@@ -730,7 +730,7 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #c27956;;
+    background-color: #F3976C;;
 }
 
 .tc-white {
@@ -738,7 +738,7 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-    background: #c27956;
+    background: #F3976C;
     color: #FFFFFF;
 }
 
@@ -756,7 +756,7 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-    color: #c27956;
+    color: #F3976C;
 }
 
 .ltc-atomic-tangerine:hover {
@@ -807,6 +807,11 @@ h4 {
 .text-agence-3 {
     font-size: 20px;
     padding: 0 50px;
+}
+
+.col-sm-4 h4 {
+    padding: 0;
+    color: black;
 }
 
 /* Media queries */
