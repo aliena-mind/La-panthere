@@ -1071,3 +1071,14 @@ h4 {
         background-attachment: scroll;
     }
 }
+
+/* Verifie si l'utilisateur utilise un support tactile ou pas, pour adapter la taille des liens si besoin */ 
+
+@media (any-pointer: coarse) { 
+    .col-sm-4 ul li  {
+        padding: 1em 40px 1em 0;
+    }
+    .col-sm-4 a {
+        padding: 1.2em 40px 1.2em 0;
+    }
+}
