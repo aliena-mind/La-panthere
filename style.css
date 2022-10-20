@@ -131,8 +131,7 @@ a:hover {
 .d-bloc h3 a,
 .d-bloc h4 a,
 .d-bloc h5 a,
-.d-bloc h6 a,
-.d-bloc p a {
+.d-bloc h6 a{
     color: black;
 }
 
@@ -695,7 +694,7 @@ h4 {
 }
 
 .white {
-    color: black;
+    color: white;
 }
 
 .portfolio-thumb {
