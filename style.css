@@ -971,6 +971,9 @@ h4 {
 }
 
 @media (min-width: 768px) {
+    .special-dropdown-nav>ul>li {
+        height: 46px;
+    }
     .site-navigation {
         position: absolute;
         top: 50%;
@@ -1082,3 +1085,4 @@ h4 {
         padding: 1.2em 40px 1.2em 0;
     }
 }
+
