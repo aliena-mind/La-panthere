@@ -616,10 +616,6 @@ a {
     max-width: 1000px;
 }
 
-.hero-bloc-text {
-    font-size: 38px;
-}
-
 .hero-bloc-text-sub {
     font-size: 36px;
 }
@@ -972,7 +968,12 @@ h4 {
 
 @media (min-width: 768px) {
     .special-dropdown-nav>ul>li {
-        height: 46px;
+        height: 92px;
+        min-width: 150px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .site-navigation {
         position: absolute;
@@ -1073,6 +1074,22 @@ h4 {
     .b-parallax {
         background-attachment: scroll;
     }
+}
+
+@media (max-width: 767px) {
+    .nav>li {
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .nav>li {
+        margin-right: -5px;
+    }
+}
+
+#bloc-0 {
+    padding: 0;
 }
 
 /* Verifie si l'utilisateur utilise un support tactile ou pas, pour adapter la taille des liens si besoin */ 
